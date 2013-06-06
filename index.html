@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Boxifier by riespandi</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Boxifier</h1>
+        <p>A lightweight HTML5 Lightbox</p>
+        <p class="view"><a href="https://github.com/riespandi/Boxifier">View the Project on GitHub <small>riespandi/Boxifier</small></a></p>
+        <ul>
+          <li><a href="https://github.com/riespandi/Boxifier/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/riespandi/Boxifier/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/riespandi/Boxifier">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>
+<a name="what-is-boxifier" class="anchor" href="#what-is-boxifier"><span class="octicon octicon-link"></span></a>What is Boxifier?</h2>
+
+<p>A lightweight HTML5 Lightbox using CSS3 animations and supporting old web browsers. No jQuery needed.</p>
+
+<p>The project <em>is currently in development</em> ! The goal is to obtain a JS file smaller than 6Ko (and less if possible).</p>
+
+<p>Currently, the main functions are finished, but some parts of the script are bugged so please <em>be careful</em> if you want to use Boxifier! Remember to check this page (<a href="https://github.com/riespandi/Boxifier/issues">https://github.com/riespandi/Boxifier/issues</a>) to know the current issues.</p>
+
+<p>See the demo <a href="http://arissh.com/collage/">here</a></p>
+
+<h2>
+<a name="installation-and-usage" class="anchor" href="#installation-and-usage"><span class="octicon octicon-link"></span></a>Installation and usage</h2>
+
+<p>To use this project on a web page, just add those five lines in your <code>&lt;head&gt;</code> tag :</p>
+
+<div class="highlight"><pre><span class="c">&lt;!--[if lt IE 9]&gt;&lt;link rel="stylesheet" href="css/boxifier_ie.css"&gt;&lt;![endif]--&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"css/boxifier.css"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/boxifier.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+<p>And specify the links you want to associate to Boxifier (Lightbox2 syntax is also supported) :</p>
+
+<div class="highlight"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"fullsize.jpg"</span> <span class="na">rel=</span><span class="s">"boxifier"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"thumbnail.jpg"</span> <span class="na">alt=</span><span class="s">"Thumbnail"</span><span class="nt">&gt;&lt;/a&gt;</span>
+</pre></div>
+
+<p>You can also create groups of images :</p>
+
+<div class="highlight"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"fullsize1.jpg"</span> <span class="na">rel=</span><span class="s">"boxifier[group1]"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"thumbnail1.jpg"</span> <span class="na">alt=</span><span class="s">"Thumbnail 1"</span><span class="nt">&gt;&lt;/a&gt;</span>
+
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"fullsize2.jpg"</span> <span class="na">rel=</span><span class="s">"boxifier[group2]"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"thumbnail2.jpg"</span> <span class="na">alt=</span><span class="s">"Thumbnail 2"</span><span class="nt">&gt;&lt;/a&gt;</span>
+</pre></div>
+
+<p>If you add a title attribute to a link, it will be displayed at the bottom of the image.</p>
+
+<h2>
+<a name="changelog" class="anchor" href="#changelog"><span class="octicon octicon-link"></span></a>Changelog</h2>
+
+<p><strong>06/06/2013</strong></p>
+
+<ul>
+<li>fix: fixed image size, auto resizing when image size &gt; screen size</li>
+<li>mod: create rounded for viewer</li>
+<li>fix: image_viewer position fixed by set z-index: 999;</li>
+</ul>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/riespandi">riespandi</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
